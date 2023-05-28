@@ -26,6 +26,22 @@
   color: orangered;
 }
 
+.mylink2:link {
+  color: orangered;
+}
+
+.mylink2:visited {
+  color: orangered;
+}
+
+.mylink2:hover {
+  color: orangered;
+}
+
+.mylink2:active {
+  color: orangered;
+}
+
 .volumeMultiplier{
 	font-size:15px;
 }
