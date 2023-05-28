@@ -35,7 +35,7 @@
   
   "browser_action": {
       "default_icon": "icons/volume.svg",
-      "default_title": "Sound",
+      "default_title": "音量增强器",
       "default_popup": "interface/interface.html"
     }
 
