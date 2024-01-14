@@ -1,0 +1,26 @@
+{
+
+  "manifest_version": 2,
+  "name": "音量增强器",
+  "version": "1.5",
+
+  "description": "音量增强小工具，扩大网页音量",
+  
+  "homepage_url": "https://laisc7301.github.io/blog/",
+  
+
+  "icons": {
+    "48": "icons/volume.svg"
+  },
+  
+  "permissions": [
+    "activeTab"
+  ],
+  
+  "browser_action": {
+      "default_icon": "icons/volume.svg",
+      "default_title": "音量增强器",
+      "default_popup": "interface/interface.html"
+    }
+
+}

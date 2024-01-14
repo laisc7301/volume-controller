@@ -1,0 +1,47 @@
+.button {
+	width: 20mm;
+	height: 10mm;
+}
+
+.inputvolume {
+	height: 10mm;
+	font-size: 5mm;
+	width: 20mm;
+}
+
+.mytitle {
+	text-align: center;
+}
+
+.mytitle2 {
+	font-weight: bold;
+	font-size: 5mm;
+}
+
+.mylink:visited {
+  color: blue;
+}
+
+.mylink2 {
+  color: orangered;
+}
+
+.mylink2:link {
+  color: orangered;
+}
+
+.mylink2:visited {
+  color: orangered;
+}
+
+.mylink2:hover {
+  color: orangered;
+}
+
+.mylink2:active {
+  color: orangered;
+}
+
+.volumeMultiplier{
+	font-size:15px;
+}
