@@ -13,6 +13,13 @@ function listenForClicks() {
 		if (e && e.keyCode == 13) {
 			//alert('enter');
 
+			let mydialog = document.getElementsByClassName("mydialog")[0];
+			if (mydialog.style.display == "block") {
+				mydialog.style.display = "none";
+				return;
+			}
+
+
 			browser.tabs.query({
 				active: true,
 				currentWindow: true
@@ -62,15 +69,22 @@ function listenForClicks() {
 
 
 		if (!isFinite(myvolume) || myvolume == "") {
-			alert("请输入数字");
-			var mydialogbg = document.getElementsByClassName("mydialogbg")[0];
-			var windowWidth = window.innerWidth;
-			var windowHeight = window.innerHeight;
+			let mydialog = document.getElementsByClassName("mydialog")[0];
+			mydialog.style.display = 'block';
+			let mydialogbg = document.getElementsByClassName("mydialogbg")[0];
+			let mydialogwindow = document.getElementsByClassName("mydialogwindow")[0];
+			let windowWidth = window.innerWidth;
+			let windowHeight = window.innerHeight;
 
 			mydialogbg.style.width = windowWidth + "px";
 			mydialogbg.style.height = windowHeight + "px";
 
+			let mydialogwindowRect = mydialogwindow.getBoundingClientRect();
 
+			let mydialogwindowWidth = mydialogwindowRect.width;
+			let mydialogwindowHeigh = mydialogwindowRect.height;
+			mydialogwindow.style.left = (windowWidth - mydialogwindowWidth) / 2 + "px";
+			mydialogwindow.style.top = (windowHeight - mydialogwindowHeigh) / 2 + "px";
 
 			return;
 		} else {
@@ -140,6 +154,16 @@ function listenForClicks() {
 			})
 				.then(setVolumeFast)
 				.catch(reportError);
+		}
+
+		if (e.target.classList.contains("mydialogwindowbutton")) {
+			let mydialog = document.getElementsByClassName("mydialog")[0];
+			mydialog.style.display = 'none';
+		}
+
+		if (e.target.classList.contains("mydialogbg")) {
+			let mydialog = document.getElementsByClassName("mydialog")[0];
+			mydialog.style.display = 'none';
 		}
 
 

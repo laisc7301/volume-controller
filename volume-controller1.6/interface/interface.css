@@ -46,13 +46,33 @@
 	font-size: 15px;
 }
 
+.mydialog{
+	display: none;
+}
 
 .mydialogbg {
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 10px;
-	background: #888888;
+	background: #c0c0c0;
 	opacity: 0.6;
 	z-index: 100;
+}
+
+.mydialogwindow {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	width: 150px;
+	height: 100px;
+	background: #95ffe1;
+	padding: 8px;
+	z-index: 101;
+}
+
+.mydialogwindowbuttondiv {
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
 }
