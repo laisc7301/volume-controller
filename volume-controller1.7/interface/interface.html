@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script src="interface.js"></script>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="interface.css">
+</head>
+
+<body>
+	<table>
+		<tr>
+			<td colspan="3" class="mytitle"><span class="mytitle2">音量增强器</span></td>
+		</tr>
+		<tr>
+			<td><input type="button" class="btn btn-warning button button1 resetButton" value="复位"></td>
+			<td><input type="button" class="btn btn-primary button button2 setVolumeFastButton" value="x2"></td>
+			<td><input type="button" class="btn btn-primary button button3 setVolumeFastButton" value="x4"></td>
+		</tr>
+		<tr>
+			<td><input type="button" class="btn btn-primary button button4 setVolumeFastButton" value="x8"></td>
+			<td><input type="button" class="btn btn-primary button button5 setVolumeFastButton" value="x16"></td>
+			<td><input type="button" class="btn btn-primary button button6 setVolumeFastButton" value="x32"></td>
+		</tr>
+		<tr>
+			<td><input type="button" class="btn btn-primary button button7 setVolumeFastButton" value="x64"></td>
+			<td><input type="button" class="btn btn-primary button button8 setVolumeFastButton" value="x128"></td>
+			<td><input type="button" class="btn btn-primary button button9 setVolumeFastButton" value="x256"></td>
+		</tr>
+		<tr>
+			<td colspan="1"><span class="volumeMultiplier">音量倍数：</span></td>
+			<td><input type="text" class="form-control inputvolume"></td>
+			<td><input type="button" class="btn btn-success button button10" value="确定"></td>
+		</tr>
+		<tr>
+			<td><a href="https://laisc7301.github.io/blog/" target="_blank" class="mylink">作者博客</a></td>
+			<td><a href="https://github.com/laisc7301/volume-controller" target="_blank" class="mylink2">源码</a></td>
+			<td>v1.7</td>
+		</tr>
+	</table>
+	<div class="mydialog">
+		<div class="mydialogbg"></div>
+		<div class="mydialogwindow">
+			请输入数字
+			<div class="mydialogwindowbuttondiv">
+				<button type="button" class="btn btn-primary mydialogwindowbutton">确定</button>
+			</div>
+		</div>
+	</div>
+	<!-- <script>
+			var mydialogbg = document.getElementsByClassName("mydialogbg")[0];
+			mydialogbg.innerHTML="aaa";
+			window.onload=function(){
+				alert("aaa");
+			}
+		</script> -->
+
+</body>
+
+</html>
